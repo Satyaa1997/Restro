@@ -62,9 +62,9 @@
 
 .auth-page,
 .profile-page,
-.admin-container {
-  padding: 40px 5%;
-}
+.admin-container,
+.contact-page,
+.menu-container 
 
 .auth-form,
 .profile-card,
@@ -322,7 +322,9 @@
 }
 
 .cart-sidebar {
-  width: min(360px, 100%);
+  flex: 0 0 min(360px, 100%);
+  max-width: 360px;
+  width: 100%;
   background: #ffffff;
   padding: 20px;
   border-radius: 14px;
@@ -425,10 +427,31 @@
   gap: 15px;
 }
 
-.inquiry-form input {
+.inquiry-form input,
+.auth-form input {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+
+.success-msg {
+  max-width: 520px;
+  width: 100%;
+  margin: 20px auto;
+  background: #eaf7ea;
+  border: 1px solid #c6e5c9;
+  padding: 18px;
+  border-radius: 12px;
+  color: #1f6f34;
+}
+
+.orders-list {
+  display: grid;
+  gap: 16px;
+}
+
+.order-items p {
+  margin: 6px 0;
 }
 
 .inquiry-form button {
@@ -515,6 +538,67 @@
 
   .admin-section {
     padding: 16px 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .navbar {
+    padding: 18px 4%;
+  }
+
+  .links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-link,
+  .nav-button {
+    padding: 10px 14px;
+  }
+
+  .hero {
+    min-height: 360px;
+    padding: 40px 0;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2rem, 7vw, 2.4rem);
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .carousel-dots {
+    gap: 8px;
+    bottom: 14px;
+  }
+
+  .menu-container,
+  .auth-page,
+  .profile-page,
+  .admin-container,
+  .contact-page {
+    padding: 22px 4%;
+  }
+
+  .menu-card {
+    padding: 18px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-total {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .admin-container table {
+    min-width: 100%;
   }
 }
 
