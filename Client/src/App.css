@@ -64,7 +64,9 @@
 .profile-page,
 .admin-container,
 .contact-page,
-.menu-container 
+.menu-container {
+  padding: 40px 5%;
+}
 
 .auth-form,
 .profile-card,
@@ -582,8 +584,29 @@
     padding: 22px 4%;
   }
 
+  .menu-layout {
+    flex-direction: column-reverse;
+    gap: 18px;
+  }
+
+  .menu-grid {
+    width: 100%;
+    min-width: 100%;
+  }
+
   .menu-card {
     padding: 18px;
+    width: 100%;
+  }
+
+  .cart-sidebar {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .filters {
+    justify-content: center;
   }
 
   .cart-item {
@@ -642,8 +665,29 @@
     padding: 22px 4%;
   }
 
+  .menu-layout {
+    flex-direction: column-reverse;
+    gap: 18px;
+  }
+
+  .menu-grid {
+    width: 100%;
+    min-width: 100%;
+  }
+
   .menu-card {
     padding: 18px;
+    width: 100%;
+  }
+
+  .cart-sidebar {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .filters {
+    justify-content: center;
   }
 
   .cart-item {
