@@ -71,7 +71,11 @@ app.post('/api/register', async (req, res) => {
       password,
     });
   } catch (err) {
-    res.status(500).json({ error: 'Registration failed.' });
+    console.error('Registration error:', err);
+    if (err.code === 11000) {
+      return res.status(400).json({ error: 'Phone number already registered. Please log in.' });
+    }
+    return res.status(500).json({ error: err.message || 'Registration failed.' });
   }
 });
 
