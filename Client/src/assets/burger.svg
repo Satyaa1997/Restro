@@ -1,0 +1,16 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="burgerBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8e44ad" />
+      <stop offset="100%" stop-color="#f39c12" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#burgerBg)" />
+  <ellipse cx="400" cy="260" rx="260" ry="80" fill="#d35400" />
+  <ellipse cx="400" cy="220" rx="260" ry="55" fill="#f39c12" />
+  <rect x="230" y="245" width="340" height="40" rx="20" fill="#27ae60" />
+  <ellipse cx="400" cy="195" rx="220" ry="40" fill="#f1c40f" />
+  <circle cx="340" cy="190" r="12" fill="#ecf0f1" />
+  <circle cx="425" cy="180" r="12" fill="#ecf0f1" />
+  <text x="50%" y="410" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="700">Burger Bliss</text>
+</svg>
